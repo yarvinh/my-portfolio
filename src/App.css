@@ -11,3 +11,14 @@
   color: white;
 }
 
+.profile-img{
+  width: 150px;
+  height: 152px;
+  border-radius: .5rem;
+  margin: 1rem;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: row;
+}
