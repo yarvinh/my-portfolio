@@ -1,24 +1,57 @@
 
-
+body{
+  box-sizing: border-box;
+}
 .main-back-ground-color {
-  background-color: #282c34;
+  background-color: whitesmoke;
   min-height: 100vh;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* font-size: calc(10px + 2vmin); */
-  color: white;
+  color: black;
+
 }
 
 .profile-img{
-  width: 150px;
-  height: 152px;
+  width: 100px;
+  height: 102px;
   border-radius: .5rem;
   margin: 1rem;
 }
 
-.about-me{
+.nav-bar{
+  cursor: pointer;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+
+
+.icons-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.icon-div{
+  width: 60px;
+  height: 60px;
+}
+
+.icons{
+  width: 40px;
+  height: 40px;
+  margin: 1rem;
+  transition: 0.4s; 
+ 
+}
+
+.icons:hover{
+  width: 50px;
+  height: 50px;
+}
+
+.project{
+  width: 300px;
+  background-color:aliceblue;
+  margin: 1rem;
+  box-shadow: 0px 5px 5px 5px #d3d2d0;
 }
