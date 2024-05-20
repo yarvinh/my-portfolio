@@ -1,9 +1,9 @@
 const About = ()=>{
    return (
      <section>
-        <article>
+        <article className="about">
             
-               <h3>About me</h3> 
+              <h3>About me</h3> 
               <p>
                 I'm an experienced Low Voltage Technician with a passion for technology and problem-solving, transitioning into a Full Stack Developer role.
                 As a technician, I have experience in troubleshooting complex systems. 

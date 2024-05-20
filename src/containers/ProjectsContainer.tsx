@@ -1,15 +1,21 @@
-const ProjectsContainer = ()=>{
-    return (
-        <section className="project">
-            <h3>      
-                Work Orders App
-                Jan 2023 - PresentJan 2023 - Present
-            </h3>
-             <p>
+import { Link } from "react-router-dom"
+import Technologies from "../components/Techologies"
 
-                I created this app to help keep buildings maintenance record, you can create an account , login and logout, you can create locations, employees and you can create work orders and assign it to an employees. Backend technologies used: Ruby on rails JWT and postgresql, frontend technologies used: React ,Javascript. 
-            </p>
-        </section>
+const ProjectsContainer = (props: {url: string; projectName: string; children: React.ReactNode; })=>{
+    return (
+         <div className="project-container">
+            <Link to={props.url} className="project-header" target="_blank" rel="noopener noreferrer">
+                <h3>      
+                    {/* Work Orders App */}
+                {props.projectName}
+                    {/* Jan 2023 - PresentJan 2023 - Present */}
+                </h3>
+            </Link>
+            <article className="project">
+                {props.children}   
+                <Technologies/>
+            </article> 
+         </div>
     )
 }
 
