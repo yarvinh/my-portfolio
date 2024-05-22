@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Technologies from "../components/Techologies"
+import Technologies from "../components/Technologies"
 import '../style/projects.css'
 const ProjectsContainer = (props: {url: string; projectName: string; children: React.ReactNode; icons: Array<string>; })=>{
     return (
@@ -10,6 +10,7 @@ const ProjectsContainer = (props: {url: string; projectName: string; children: R
                 </h3>
             </Link>
             <article className="project">
+            <h4>Technologies used</h4>
             <Technologies icons={props.icons}/> 
                 {props.children}  
             </article> 

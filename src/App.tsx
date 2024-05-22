@@ -4,6 +4,7 @@ import './App.css';
 // import Home from './components/Home';
 import About from './components/about';
 import ProjectsContainer from './containers/ProjectsContainer';
+import Footer from './components/Footer';
 type Img = {
   htmlIcon: string;
   cssIcon: string;
@@ -22,16 +23,10 @@ const img: Img = {
   rubyIcon: "icons/ruby-plain-wordmark.svg"
 }
 
-{/* <img src="icons/html5-original-wordmark.svg" className="icons" alt="HTML5 icon"/>
-<img src="icons/css3-original-wordmark.svg" className="icons" alt="css3 icon"/>
-<img src="icons/postgresql-plain-wordmark.svg" className="icons" alt="postgresql icon"/>
-<img src="icons/react-original.svg" className="icons" alt="HTML5 icon"/>
-<img src="icons/rails-plain-wordmark.svg" className="icons" alt="Ruby On Rails icon"/> */}
 function App() {
-  console.log(img)
   return (
       <BrowserRouter>
-        <section className="main-back-ground-color">
+        <main className="main-back-ground-color">
           <nav className='nav-bar'> 
             <img src="../icons/profileimg.jpeg" className="profile-img" alt="my self in blue tshirt"/>
             <div className="icons-container">
@@ -46,28 +41,29 @@ function App() {
           <About/>
           <section className='projects-container'>
             <ProjectsContainer projectName="Work Orders App" url="https://work-orders-frontend-e69a673b70ee.herokuapp.com" icons={[img.htmlIcon, img.cssIcon,img.postgresqlIcon,img.railsIcon, img.reactIcon]}>
-                <p>
-                    I created this app to help keep buildings maintenance record, you can create an account , login and logout, you can create locations, employees and you can create work orders and assign it to an employees. Backend technologies used: Ruby on rails JWT and postgresql, frontend technologies used: React ,Javascript. 
+                <p className='project-text'>
+                    Work orders app keep buildings maintenance record. You can create an account, login and logout, you can create locations, employees, work orders and assign it to an employees.
+                    You can see any HPD violation or complaint, and you can see any DOB violation.
                 </p>
             </ProjectsContainer>
             <ProjectsContainer projectName="East Harlem Corp" url="https://safe-sands-70988-45596a723e4f.herokuapp.com/" icons={[img.railsIcon,img.cssIcon, img.htmlIcon]}>
-              <p>
-                I created this app to help keep buildings maintenance record, you can create an account , login and logout, you can create locations, employees and you can create work orders and assign it to an employees. Backend technologies used: Ruby on rails JWT and postgresql, frontend technologies used: React ,Javascript. 
+              <p className='project-text'>
+                This app was build for a contruction company, they can upload images of construction renovation. constumers can apply for a quote.
               </p>
             </ProjectsContainer>
             <ProjectsContainer projectName="Soccer-quiz" url="https://rubygems.org/gems/soccer-quiz" icons={[img.rubyIcon]}>
-              <p>
-                I created this app to help keep buildings maintenance record, you can create an account , login and logout, you can create locations, employees and you can create work orders and assign it to an employees. Backend technologies used: Ruby on rails JWT and postgresql, frontend technologies used: React ,Javascript. 
+              <p className='project-text'>
+                
               </p>
             </ProjectsContainer>
             <ProjectsContainer projectName="Bet App" url="" icons={[img.htmlIcon, img.cssIcon,img.postgresqlIcon,img.railsIcon, img.reactIcon]} >
-              <p>
-                I created this app to help keep buildings maintenance record, you can create an account , login and logout, you can create locations, employees and you can create work orders and assign it to an employees. Backend technologies used: Ruby on rails JWT and postgresql, frontend technologies used: React ,Javascript. 
+              <p className='project-text'>
+              This is a soccer betting app where users have the ability to login, logout and sign-up. Users can also see, bet and like upcoming soccer matches.
               </p>
             </ProjectsContainer>
           </section>
-        
-        </section>
+          <Footer/>
+        </main>
       </BrowserRouter>
       
        

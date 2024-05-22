@@ -6,13 +6,16 @@
   }
   .about{
     color: white;
-    background-color: #57886c;
-    border-width: 3px;
-    border-color: black;
-    border-style: solid;
+    background-color: #34568B;
+    /* background-color: #57886c; */
+    box-shadow: 0px 5px 6px black;
     height: 300px;
     gap: 10px;
     height:auto;
+  }
+
+  .about p{
+    margin: 1rem;
   }
 
   .about-img{

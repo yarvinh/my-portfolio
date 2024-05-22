@@ -9,7 +9,50 @@ body{
 
 }
 
-.project-header{
+.profile-img{
+  width: 100px;
+  height: 102px;
+  border-radius: .5rem;
+  margin: 1rem;
+}
+
+.nav-bar{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+.icons-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.icon-link{
+  width: 60px;
+  height: 60px;
+}
+
+.icons{ 
+  margin:1rem;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s; 
+}
+
+.icons:hover{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+/* .project-header{
   color: white;
   background-color: #34568B;
   text-align: center;
@@ -21,7 +64,7 @@ body{
   left: 100px;
   text-decoration: none;
   border-radius: .5rem;
-}
+} */
 
 .space-between{
   justify-content: space-between;

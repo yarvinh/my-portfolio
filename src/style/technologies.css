@@ -1,0 +1,13 @@
+.technologies-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.techologies-icons{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;     
+}
