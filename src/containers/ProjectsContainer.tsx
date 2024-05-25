@@ -3,7 +3,7 @@ import Technologies from "../components/Technologies"
 import '../style/projects.css'
 const ProjectsContainer = (props: {url: string; projectName: string; children: React.ReactNode; icons: Array<string>; })=>{
     return (
-         <div className="project-container">
+        <div className="project-container">
             <Link to={props.url} className="project-header" target="_blank" rel="noopener noreferrer">
                 <h3>      
                   {props.projectName}
@@ -14,7 +14,7 @@ const ProjectsContainer = (props: {url: string; projectName: string; children: R
             <Technologies icons={props.icons}/> 
                 {props.children}  
             </article> 
-         </div>
+        </div>
     )
 }
 
