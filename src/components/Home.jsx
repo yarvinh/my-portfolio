@@ -1,12 +1,20 @@
 import ProjectsContainer from "../containers/ProjectsContainer"
 import About from "./about"
 import { IMG } from "../helpers/constants"
+import Dialog from "./Dialog"
+import { useRef } from "react"
 const Home = ()=>{
+    const dialog = useRef()
+
+    const handleOnclick=()=> {
+       dialog.current.showModal()
+    }
+
     return (
         <>
             <About/>
             <section className='projects-container'>
-                <ProjectsContainer projectName="Work Orders App" url="https://work-orders-frontend-e69a673b70ee.herokuapp.com" icons={[IMG.htmlIcon, IMG.cssIcon,IMG.postgresqlIcon,IMG.railsIcon, IMG.reactIcon]}>
+                <ProjectsContainer projectName="Work Orders App" url="https://www.maintainmagic.com/" icons={[IMG.htmlIcon, IMG.cssIcon,IMG.postgresqlIcon,IMG.railsIcon, IMG.reactIcon]}>
                     <p className='project-text'>
                         Work orders app keep buildings maintenance record. You can create an account, login and logout, you can create locations, employees, work orders and assign it to an employees.
                         You can see any HPD violation or complaint, and you can see any DOB violation.

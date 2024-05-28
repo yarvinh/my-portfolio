@@ -3,3 +3,24 @@
     background-color: #34568B;
     height: 200px;
 }
+
+.footer-icons{
+    margin:1rem;
+    width: 30px;
+    height: 30px;
+    transition: 0.4s; 
+    filter: invert(50%) sepia(40%) saturate(337%) hue-rotate(93deg) brightness(90%) contrast(85%);
+}
+
+.footer-icons:hover{
+    width: 40px;
+    height: 40px;
+}
+
+#email-link{
+    font-family: bebas;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}

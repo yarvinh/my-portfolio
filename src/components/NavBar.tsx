@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom"
+import '../style/nav-bar.css'
 
 const NavBar = ()=>{
     return (
         <nav className='nav-bar'> 
-            <img src="../icons/profileimg.jpeg" className="profile-img" alt="my self in blue tshirt"/>
+            <div className="profile-image">
+                <img src="../icons/profileimg.jpeg" className="profile-img" alt="my self in blue tshirt"/>
+                <p id="name"><strong>Yarvin Hernandez</strong></p>
+            </div>
             <div className="icons-container">
                 <Link to="https://www.linkedin.com/in/yarvin-hernandez-332572aa/" className="icon-link">
                     <img src="icons/linkedin-original.svg" className="icons" alt="Linkedin icon"/> 
@@ -13,8 +17,8 @@ const NavBar = ()=>{
                 </Link>
             </div>
             <Link to="/resume" id="resume-file-link" className="icon-link" target="_blank" >
-                <img src="icons/file.svg" className="icons" alt="github icon"/> 
-                Resume
+                <img src="icons/file.svg" className="resume-img" alt="github icon"/> 
+                <strong>Resume</strong>
             </Link>
         </nav> 
     )

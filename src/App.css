@@ -23,8 +23,6 @@ body{
   align-items: center;
 }
 
-
-
 .icons-container{
   display: flex;
   flex-direction: row;
@@ -50,26 +48,9 @@ body{
 }
 
 
-
-
-/* .project-header{
-  color: white;
-  background-color: #34568B;
-  text-align: center;
-  position: absolute;
-  border-width: 3px;
-  border-color: black;
-  border-style: solid;
-  width: 200px;
-  left: 100px;
-  text-decoration: none;
-  border-radius: .5rem;
-} */
-
 .space-between{
   justify-content: space-between;
 }
-
 
 .resume{
   width: 100%;
@@ -78,10 +59,59 @@ body{
 
 .resume-container{
   background-color: black;
-  /* position: fixed; */
 }
 
 #resume-file-link{
-  float: right;
+  cursor: pointer;
+  color:black;
+  font-size: 12px;
+  margin-left: 1rem;
+  margin-top: 33px;
   text-decoration: none;
 }
+
+.resume-img{
+  width: 25px;
+  height: 25px;
+  margin-left: 12px; 
+  transition: .3s;
+}
+
+.resume-img:hover{
+  width: 35px;
+  height: 35px;
+  margin-left: 7px; 
+}
+
+.dialog{
+  width: 600px;
+  height: 50vh;
+  position: absolute;
+  z-index: 10;
+  
+}
+
+.dialog::backdrop {
+  /* width: 600px;
+  height: 50vh; */
+  /* position: absolute; */
+  /* z-index: 10; */
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+.profile-image{
+  font-size: 16px;
+  margin-top: 30px;
+  text-align: center;
+ }
+
+ .profile-image.p{
+  margin-top: 0px;
+ }
+
+ #name{
+  margin-top: -10px;
+  font-family: cursive;
+ }
+

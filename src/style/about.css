@@ -7,7 +7,6 @@
   .about{
     color: white;
     background-color: #34568B;
-    /* background-color: #57886c; */
     box-shadow: 0px 5px 6px black;
     height: 300px;
     gap: 10px;
@@ -22,8 +21,3 @@
     width: 300px;
     height:auto;
   }
-
-  /* 
-  Green color: #57886c
-  */
-  
