@@ -1,20 +1,18 @@
-import { Link } from "react-router-dom"
-import Technologies from "../components/Technologies"
+import Project from '../components/projects/project';
+import { PROJECTS } from '../helpers/constants';
 import '../style/projects.css'
-const ProjectsContainer = (props: {url: string; projectName: string; children: React.ReactNode; icons: Array<string>; })=>{
+
+const ProjectsContainer = ()=>{
     return (
-        <div className="project-container">
-            <Link to={props.url} className="project-header" target="_blank" rel="noopener noreferrer">
-                <h3>      
-                  {props.projectName}
-                </h3>
-            </Link>
-            <article className="project">
-            <h4>Technologies used</h4>
-            <Technologies icons={props.icons}/> 
-                {props.children}  
-            </article> 
-        </div>
+        <section className='projects-container'>
+           {PROJECTS.map((project,index)=>{
+                return (
+                    <Project key={index} projectName={project.projectName} 
+                    url={project.url} icons={project.icons} 
+                    description={project.description}/>
+                )
+           })}
+        </section>
     )
 }
 

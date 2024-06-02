@@ -3,8 +3,9 @@ import '../style/about.css'
 const About = ()=>{
    return (
      <section className="about-container">
-        <h3 className="about-header">About me</h3> 
+        
         <article className="about">
+            <h3 className="about-header">About me</h3> 
               <p>
                 I'm an experienced Low Voltage Technician with a passion for technology and problem-solving, transitioning into a Full Stack Developer role.
                 As a technician, I have experience in troubleshooting complex systems. 

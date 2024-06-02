@@ -1,3 +1,4 @@
+import { LABELS } from '../helpers/constants'
 import '../style/footer.css'
 import { Link } from 'react-router-dom'
 
@@ -6,7 +7,7 @@ const Footer = ()=>{
         <section className="footer">
             <Link to="mailto:yarvinhhernandez@gamail.com" id="email-link" >
                 <img src="icons/email-icon.svg" className="footer-icons" alt="email icon"/> 
-                <strong>Email me</strong>
+                <strong>{LABELS.email}</strong>
             </Link>
             <Link to="tell:yarvinhhernandez@gamail.com" id="email-link" >
                 <img src="icons/email-icon.svg" className="footer-icons" alt="email icon"/> 

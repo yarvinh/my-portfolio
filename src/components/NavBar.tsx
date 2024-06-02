@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
 import '../style/nav-bar.css'
+import { LABELS } from "../helpers/constants"
 
 const NavBar = ()=>{
     return (
         <nav className='nav-bar'> 
             <div className="profile-image">
                 <img src="../icons/profileimg.jpeg" className="profile-img" alt="my self in blue tshirt"/>
-                <p id="name"><strong>Yarvin Hernandez</strong></p>
+                <p id="name"><strong>{LABELS.name}</strong></p>
             </div>
             <div className="icons-container">
                 <Link to="https://www.linkedin.com/in/yarvin-hernandez-332572aa/" className="icon-link">
