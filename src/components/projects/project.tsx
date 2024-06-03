@@ -5,6 +5,7 @@ const Project = ({description, projectName, icons ,url}: {description: string; p
     
     return (
         <div className="project-container">
+
             <Link to={url} className="project-header" target="_blank" rel="noopener noreferrer">
                 <h3>      
                 {projectName}
@@ -14,7 +15,6 @@ const Project = ({description, projectName, icons ,url}: {description: string; p
                 <h4>Technologies used</h4>
                 <Technologies icons={icons}/> 
                 <p className='project-text'>{description}</p>
-                
             </article> 
         </div>
     )

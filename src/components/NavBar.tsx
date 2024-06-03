@@ -21,6 +21,7 @@ const NavBar = ()=>{
                 <img src="icons/file.svg" className="resume-img" alt="github icon"/> 
                 <strong>Resume</strong>
             </Link>
+            
         </nav> 
     )
 }

@@ -9,10 +9,6 @@ const Footer = ()=>{
                 <img src="icons/email-icon.svg" className="footer-icons" alt="email icon"/> 
                 <strong>{LABELS.email}</strong>
             </Link>
-            <Link to="tell:yarvinhhernandez@gamail.com" id="email-link" >
-                <img src="icons/email-icon.svg" className="footer-icons" alt="email icon"/> 
-                <strong>Contact me</strong>
-            </Link>
         </section>
     )
 }
