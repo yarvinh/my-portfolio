@@ -38,7 +38,7 @@ export const PROJECTS = [
 
   {
    projectName: "Bet App",
-   url: "https://futbol-bet-561e73dd6e15.herokuapp.com/games",
+   url: "https://futbol-bet-561e73dd6e15.herokuapp.com",
    description: "This is an app where users have the ability to create an account and create bets about upcoming soccer matches. This app is also interactive as users can add comments on games.",
    icons: [IMG.htmlIcon, IMG.cssIcon,IMG.postgresqlIcon,IMG.railsIcon, IMG.reactIcon]
   }
